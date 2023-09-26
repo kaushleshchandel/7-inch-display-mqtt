@@ -53,7 +53,7 @@ void weather_task(void *pvParameter){
         
         OpenWeatherData data = OpenWeatherData::from_json(root);
 
-        //data.logValues();
+        data.logValues();
 
         xSemaphoreTake(mutex, portMAX_DELAY);
         disp_weather(data);

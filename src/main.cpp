@@ -50,14 +50,14 @@ void setup()
                     NULL,         /* Task handle. */
                     1);           /* Clock task on core 0*/      
  
-  xTaskCreatePinnedToCore(
-                    sensor_task,   /* Task function. */
-                    "Sensor Task", /* String with name of task. */
-                    4096,         /* Stack size in bytes. */
-                    NULL,         /* Parameter passed as input of the task */
-                    1,           /* Priority of the task. */
-                    NULL,         /* Task handle. */
-                    1);                                                               
+//  xTaskCreatePinnedToCore(
+//                    sensor_task,   /* Task function. */
+//                    "Sensor Task", /* String with name of task. */
+//                    4096,         /* Stack size in bytes. */
+//                    NULL,         /* Parameter passed as input of the task */
+//                    1,           /* Priority of the task. */
+//                    NULL,         /* Task handle. */
+//                    1);                                                               
 
   xTaskCreatePinnedToCore(
                     brightness_task,   
